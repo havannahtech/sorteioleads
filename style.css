@@ -1,59 +1,12 @@
-:root{
-  --bg:#0b0b0b;
-  --card:#151515;
-  --card2:#1c1c1c;
-  --red:#8b0000;
-  --red2:#b30000;
-  --gray:#9b9b9b;
-  --text:#ffffff;
-}
-
-*{
-  box-sizing:border-box;
-}
-
-body{
-  margin:0;
-  background:var(--bg);
-  color:var(--text);
-  font-family:Arial, Helvetica, sans-serif;
-}
-
-.container{
-  max-width:520px;
-  margin:auto;
-  padding:24px;
-}
-
-/* LOGO */
-.logo-box{
+.countdown-box{
+  background:none;
+  padding:0;
   text-align:center;
-  margin-bottom:20px;
+  margin-bottom:16px;
+  box-shadow:none;
 }
-.logo-box img{
-  max-width:190px;
-}
-
-/* HEADLINE */
-.headline{
-  text-align:center;
-  font-size:26px;
-  margin-bottom:20px;
-}
-.headline span{
+.countdown{
+  font-size:22px;
+  font-weight:600;
   color:var(--red);
 }
-
-/* COUNTDOWN */
-.countdown-box{
-  background:var(--card);
-  border-radius:16px;
-  padding:18px;
-  text-align:center;
-  margin-bottom:20px;
-  box-shadow:0 0 30px rgba(139,0,0,.25);
-}
-.countdown-title{
-  font-size:12px;
-  color:var(--gray);
-  letter-spacin
