@@ -7,35 +7,55 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <div class="container">
+
+  <!-- LOGO -->
   <div class="logo-box">
     <img src="logo.png" alt="Sagaz Motors">
   </div>
 
+  <!-- HEADLINE -->
   <h1 class="headline">
     Concorra a uma <span>Moto Elétrica Sagaz Motors</span>
   </h1>
 
+  <!-- COUNTDOWN -->
   <div class="countdown-box">
-    <div id="countdown" class="countdown">Encerra em 14/02/2026</div>
+    <p class="countdown-title">SORTEIO ENCERRA EM</p>
+    <div id="countdown" class="countdown"></div>
+    <p class="countdown-date">14/02/2026</p>
   </div>
 
-  <a class="instagram-btn" href="https://www.instagram.com/sagazmotors/" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
-    Seguir @sagazmotors
+  <!-- INSTAGRAM -->
+  <a class="instagram-btn"
+     href="https://www.instagram.com/sagazmotors/"
+     target="_blank">
+     <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+     Seguir @sagazmotors
   </a>
 
-  <form class="form-card">
-    <input placeholder="Nome completo">
-    <input placeholder="CPF">
-    <input placeholder="WhatsApp">
-    <input placeholder="CEP">
-    <input placeholder="Número">
-    <input placeholder="Endereço" readonly>
-    <button class="cta">Participar do Sorteio</button>
-  </form>
+  <!-- FORM -->
+  <form id="leadForm" class="form-card">
 
-  <footer>Sagaz Motors • Motos Premium com Procedência</footer>
-</div>
-</body>
-</html>
+    <input type="text" id="nome" placeholder="Nome completo" required>
+    <input type="text" id="cpf" placeholder="CPF" required>
+    <input type="tel" id="whatsapp" placeholder="WhatsApp" required>
+
+    <input type="text" id="cep" placeholder="CEP" required>
+    <input type="text" id="numeroCasa" placeholder="Número" required>
+    <input type="text" id="endereco" placeholder="Endereço completo" readonly>
+
+    <div class="options">
+      <label>
+        <input type="radio" name="beneficio" required>
+        Voucher R$ 1.000 à vista
+      </label>
+      <label>
+        <input type="radio" name="beneficio">
+        Parcelamento 24x sem juros
+      </label>
+    </div>
+
+    <button type="submit" class="cta">
+      Participar do Sortei
