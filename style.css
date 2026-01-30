@@ -25,7 +25,6 @@ body{
 
 .logo-box{
   text-align:center;
-  margin-bottom:10px;
 }
 .logo-box img{
   max-width:190px;
@@ -36,9 +35,7 @@ body{
   text-align:center;
   font-size:22px;
 }
-.headline span{
-  color:var(--red2);
-}
+.headline span{color:var(--red2);}
 
 .countdown-box{
   background:linear-gradient(135deg,var(--cinza),#111);
@@ -58,10 +55,6 @@ body{
   letter-spacing:2px;
   color:var(--muted);
 }
-.countdown-date{
-  font-size:12px;
-  opacity:.7;
-}
 
 .instagram-btn{
   display:flex;
@@ -79,18 +72,12 @@ body{
 .instagram-btn img{
   width:38px;
   height:38px;
-  object-fit:contain;
   filter:invert(1);
-}
-.instagram-btn:hover{
-  transform:scale(1.04);
-  box-shadow:0 0 25px rgba(179,0,0,.7);
 }
 
 @keyframes pulse{
   0%{box-shadow:0 0 0 0 rgba(179,0,0,.6);}
   70%{box-shadow:0 0 0 18px rgba(179,0,0,0);}
-  100%{box-shadow:0 0 0 0 rgba(179,0,0,0);}
 }
 
 .form-card{
@@ -98,7 +85,6 @@ body{
   padding:22px;
   border-radius:20px;
   margin-top:22px;
-  box-shadow:0 0 30px rgba(0,0,0,.6);
 }
 
 input{
@@ -109,11 +95,6 @@ input{
   border:1px solid #2a2a2a;
   color:#fff;
   border-radius:12px;
-  font-size:15px;
-}
-input:focus{
-  outline:none;
-  border-color:var(--red2);
 }
 
 .options label{
@@ -122,33 +103,26 @@ input:focus{
   padding:16px;
   border-radius:14px;
   margin-bottom:12px;
-  border:1px solid #2a2a2a;
-  cursor:pointer;
 }
 
 .cta{
   width:100%;
   padding:18px;
-  margin-top:6px;
   background:linear-gradient(90deg,var(--red),var(--red2));
   border:none;
   border-radius:16px;
   font-size:18px;
   font-weight:bold;
   color:#fff;
-  cursor:pointer;
 }
 
 .info{
   text-align:center;
   font-size:12px;
   color:var(--muted);
-  margin-top:12px;
 }
 
-.resultado,
-.share-box,
-.regras{
+.resultado,.share-box,.regras{
   background:var(--card);
   padding:20px;
   border-radius:18px;
@@ -164,10 +138,9 @@ input:focus{
   border-radius:14px;
   background:var(--red);
   color:#fff;
-  font-weight:bold;
-  cursor:pointer;
 }
-.share-box .outline{
+
+.outline{
   background:transparent;
   border:1px solid var(--red);
 }
@@ -177,9 +150,17 @@ input:focus{
   padding-left:18px;
   font-size:14px;
 }
-.regras li{
-  margin-bottom:8px;
-  color:var(--muted);
+
+.admin-btn{
+  display:none;
+  margin-top:30px;
+  width:100%;
+  padding:14px;
+  background:#222;
+  color:#fff;
+  border:1px solid #444;
+  border-radius:14px;
+  font-weight:bold;
 }
 
 footer{
