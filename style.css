@@ -1,11 +1,69 @@
 :root{
---bg:#0b0b0b;--card:#141414;--red:#8b0000;--red2:#b30000;--text:#fff;
+  --bg:#0b0b0b;
+  --panel:#111;
+  --panel2:#151515;
+  --red:#8b0000;
+  --red2:#b30000;
+  --muted:#8a8a8a;
+  --text:#ffffff;
 }
-body{margin:0;font-family:Arial;background:#000;color:#fff}
-.container{max-width:480px;margin:auto;padding:20px}
-.logo-box{text-align:center}
-.logo-box img{max-width:180px}
-.form-card{background:#141414;padding:20px;border-radius:16px}
-input{width:100%;padding:12px;margin-bottom:10px;background:#0e0e0e;border:1px solid #333;color:#fff;border-radius:10px}
-.cta{width:100%;padding:14px;background:linear-gradient(90deg,var(--red),var(--red2));border:none;color:#fff;border-radius:14px;font-size:16px}
-.resultado{text-align:center;margin-top:20px}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  background:linear-gradient(180deg,#000,#0b0b0b);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
+}
+
+.container{
+  max-width:520px;
+  margin:auto;
+  padding:28px 22px;
+}
+
+/* LOGO */
+.logo-box{
+  text-align:center;
+  margin:10px 0 24px;
+}
+.logo-box img{
+  max-width:180px;
+}
+
+/* HEADLINE */
+.headline{
+  text-align:center;
+  font-size:28px;
+  line-height:1.2;
+  margin-bottom:12px;
+}
+.headline span{
+  color:var(--red);
+}
+
+/* COUNTDOWN */
+.countdown-box{
+  text-align:center;
+  margin-bottom:22px;
+}
+.countdown-title{
+  font-size:11px;
+  letter-spacing:2px;
+  color:var(--muted);
+}
+.countdown{
+  font-size:22px;
+  font-weight:600;
+  color:var(--red);
+  margin:6px 0;
+}
+.countdown-date{
+  font-size:11px;
+  color:var(--muted);
+}
+
+/* INSTA*
