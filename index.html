@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Sagaz Motors | Sorteio Moto Elétrica</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="logo-box">
+    <img src="logo.png" alt="Sagaz Motors">
+  </div>
+
+  <h1 class="headline">
+    Concorra a uma <span>Moto Elétrica Sagaz Motors</span>
+  </h1>
+
+  <div class="countdown-box">
+    <p class="countdown-title">SORTEIO ENCERRA EM</p>
+    <div id="countdown" class="countdown"></div>
+    <p class="countdown-date">14/02/2026</p>
+  </div>
+
+  <a class="instagram-btn"
+     href="https://www.instagram.com/sagazmotors/"
+     target="_blank"
+     onclick="marcarSeguiu()">
+     <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+     Seguir @sagazmotors
+  </a>
+
+  <form id="leadForm" class="form-card">
+
+    <input type="text" placeholder="Nome completo" required>
+    <input type="tel" placeholder="WhatsApp" required>
+
+    <input type="text" id="cep" placeholder="CEP" required>
+    <input type="text" id="numeroCasa" placeholder="Número" required>
+    <input type="text" id="endereco" placeholder="Endereço completo" readonly>
+
+    <div class="options">
+      <label>
+        <input type="radio" name="beneficio" required>
+        Voucher R$ 1.000 à vista
+      </label>
+      <label>
+        <input type="radio" name="beneficio">
+        Parcelamento 24x sem juros
+      </label>
+    </div>
+
+    <button type="submit" class="cta">
+      Participar do Sorteio
+    </button>
+
+    <p class="info">
+      Número único entre 01 e 20000 • Apenas 1 participação
+    </p>
+
+  </form>
+
+  <div id="resultado" class="resultado"></div>
+
+  <div class="share-box">
+    <h3>Compartilhe com amigos</h3>
+    <button onclick="compartilharWhats()">Compartilhar no WhatsApp</button>
+    <button onclick="copiarLink()" class="outline">Copiar link</button>
+  </div>
+
+  <div class="regras">
+    <h3>Regras do Sorteio</h3>
+    <ul>
+      <li>Cadastro neste sistema</li>
+      <li>Seguir @sagazmotors</li>
+      <li>Postar um story com a imagem oficial</li>
+      <li>Marcar @sagazmotors</li>
+    </ul>
+  </div>
+
+  <footer>
+    Sagaz Motors • Motos Premium com Procedência
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

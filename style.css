@@ -1,0 +1,190 @@
+:root{
+  --bg:#0b0b0b;
+  --card:#141414;
+  --cinza:#1f1f1f;
+  --red:#8b0000;
+  --red2:#b30000;
+  --text:#ffffff;
+  --muted:#aaaaaa;
+}
+
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  font-family:"Segoe UI",Arial,sans-serif;
+  background:linear-gradient(180deg,#000,var(--bg));
+  color:var(--text);
+}
+
+.container{
+  max-width:480px;
+  margin:auto;
+  padding:26px;
+}
+
+.logo-box{
+  text-align:center;
+  margin-bottom:10px;
+}
+.logo-box img{
+  max-width:190px;
+  filter:drop-shadow(0 0 18px var(--red2));
+}
+
+.headline{
+  text-align:center;
+  font-size:22px;
+}
+.headline span{
+  color:var(--red2);
+}
+
+.countdown-box{
+  background:linear-gradient(135deg,var(--cinza),#111);
+  border-radius:18px;
+  padding:18px;
+  text-align:center;
+  margin:20px 0;
+  border:1px solid rgba(179,0,0,.35);
+}
+.countdown{
+  font-size:30px;
+  font-weight:bold;
+  color:var(--red2);
+}
+.countdown-title{
+  font-size:12px;
+  letter-spacing:2px;
+  color:var(--muted);
+}
+.countdown-date{
+  font-size:12px;
+  opacity:.7;
+}
+
+.instagram-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  background:linear-gradient(90deg,var(--red),var(--red2));
+  padding:16px;
+  border-radius:16px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+  animation:pulse 1.8s infinite;
+}
+.instagram-btn img{
+  width:38px;
+  height:38px;
+  object-fit:contain;
+  filter:invert(1);
+}
+.instagram-btn:hover{
+  transform:scale(1.04);
+  box-shadow:0 0 25px rgba(179,0,0,.7);
+}
+
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(179,0,0,.6);}
+  70%{box-shadow:0 0 0 18px rgba(179,0,0,0);}
+  100%{box-shadow:0 0 0 0 rgba(179,0,0,0);}
+}
+
+.form-card{
+  background:linear-gradient(180deg,var(--card),#0f0f0f);
+  padding:22px;
+  border-radius:20px;
+  margin-top:22px;
+  box-shadow:0 0 30px rgba(0,0,0,.6);
+}
+
+input{
+  width:100%;
+  padding:15px;
+  margin-bottom:14px;
+  background:#0e0e0e;
+  border:1px solid #2a2a2a;
+  color:#fff;
+  border-radius:12px;
+  font-size:15px;
+}
+input:focus{
+  outline:none;
+  border-color:var(--red2);
+}
+
+.options label{
+  display:block;
+  background:#111;
+  padding:16px;
+  border-radius:14px;
+  margin-bottom:12px;
+  border:1px solid #2a2a2a;
+  cursor:pointer;
+}
+
+.cta{
+  width:100%;
+  padding:18px;
+  margin-top:6px;
+  background:linear-gradient(90deg,var(--red),var(--red2));
+  border:none;
+  border-radius:16px;
+  font-size:18px;
+  font-weight:bold;
+  color:#fff;
+  cursor:pointer;
+}
+
+.info{
+  text-align:center;
+  font-size:12px;
+  color:var(--muted);
+  margin-top:12px;
+}
+
+.resultado,
+.share-box,
+.regras{
+  background:var(--card);
+  padding:20px;
+  border-radius:18px;
+  margin-top:20px;
+  text-align:center;
+}
+
+.share-box button{
+  width:100%;
+  padding:14px;
+  margin-bottom:10px;
+  border:none;
+  border-radius:14px;
+  background:var(--red);
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+}
+.share-box .outline{
+  background:transparent;
+  border:1px solid var(--red);
+}
+
+.regras ul{
+  text-align:left;
+  padding-left:18px;
+  font-size:14px;
+}
+.regras li{
+  margin-bottom:8px;
+  color:var(--muted);
+}
+
+footer{
+  text-align:center;
+  font-size:11px;
+  color:#777;
+  margin-top:26px;
+}
