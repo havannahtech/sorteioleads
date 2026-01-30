@@ -1,12 +1,11 @@
-.countdown-box{
-  background:none;
-  padding:0;
-  text-align:center;
-  margin-bottom:16px;
-  box-shadow:none;
+:root{
+--bg:#0b0b0b;--card:#141414;--red:#8b0000;--red2:#b30000;--text:#fff;
 }
-.countdown{
-  font-size:22px;
-  font-weight:600;
-  color:var(--red);
-}
+body{margin:0;font-family:Arial;background:#000;color:#fff}
+.container{max-width:480px;margin:auto;padding:20px}
+.logo-box{text-align:center}
+.logo-box img{max-width:180px}
+.form-card{background:#141414;padding:20px;border-radius:16px}
+input{width:100%;padding:12px;margin-bottom:10px;background:#0e0e0e;border:1px solid #333;color:#fff;border-radius:10px}
+.cta{width:100%;padding:14px;background:linear-gradient(90deg,var(--red),var(--red2));border:none;color:#fff;border-radius:14px;font-size:16px}
+.resultado{text-align:center;margin-top:20px}
